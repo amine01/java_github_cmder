@@ -5,14 +5,12 @@ public class Person {
 	private String lastName;
 	private String job;
 	private int age;
-	private int phoneNumber;
 
-	public Person(String firstName, String lastName, String job, int age,int phoneNumber) {
+	public Person(String firstName, String lastName, String job, int age) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.job = job;
 		this.age = age;
-		this.phoneNumber = phoneNumber;
 	}
 
 	public int getAge() {
@@ -47,19 +45,12 @@ public class Person {
 		this.job = job;
 	}
 
-	public int getPhoneNumber() {
-		return phoneNumber;
-	}
 
-	public void setPhoneNumber(int phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
 
 	@Override
 	public String toString() {
 		return "Person [firstName=" + firstName + ", lastName=" + lastName
-				+ ", job=" + job + ", age=" + age + ", phoneNumber="
-				+ phoneNumber + "]";
+				+ ", job=" + job + ", age=" + age + "]";
 	}
 	
 	
