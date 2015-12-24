@@ -55,4 +55,13 @@ public class Person {
 		this.phoneNumber = phoneNumber;
 	}
 
+	@Override
+	public String toString() {
+		return "Person [firstName=" + firstName + ", lastName=" + lastName
+				+ ", job=" + job + ", age=" + age + ", phoneNumber="
+				+ phoneNumber + "]";
+	}
+	
+	
+
 }
